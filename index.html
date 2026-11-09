@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saurabh Bajpai Studio | Curated Art, Streetwear & Creator Gear</title>
+  <meta name="description" content="Official Print-on-Demand & Dropshipping Studio founded by Saurabh Bajpai. Museum canvas art, heavyweight streetwear, and creator desk accessories. Zero inventory, worldwide direct fulfillment.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              900: '#064e3b'
+            },
+            accent: {
+              gold: '#f59e0b',
+              amber: '#d97706',
+              cyan: '#06b6d4',
+              neon: '#10b981'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #0b0f19;
+      color: #f3f4f6;
+    }
+    .heading-font {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    .glass-card {
+      background: rgba(17, 24, 39, 0.75);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card-hover:hover {
+      border-color: rgba(16, 185, 129, 0.4);
+      transform: translateY(-4px);
+      box-shadow: 0 20px 30px -10px rgba(16, 185, 129, 0.15);
+    }
+    .badge-gradient {
+      background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+    }
+  </style>
+</head>
+<body class="min-h-screen antialiased flex flex-col selection:bg-emerald-500 selection:text-white">
+
+  <!-- TOP ANNOUNCEMENT BANNER -->
+  <div class="bg-gradient-to-r from-emerald-900 via-teal-900 to-slate-900 text-xs py-2 px-4 text-center font-medium border-b border-emerald-500/20 text-emerald-200">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="hidden md:flex items-center space-x-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>Global Direct Dropshipping Active (130+ Hubs in 32 Countries)</span>
+      </div>
+      <div class="mx-auto md:mx-0 font-semibold tracking-wide">
+        WORLDWIDE COMPLIMENTARY EXPRESS SHIPPING ON ALL ORDERS THIS WEEK
+      </div>
+      <div class="hidden md:flex items-center space-x-4">
+        <span>Payout & Merchant: <strong>Saurabh Bajpai</strong></span>
+        <span>HDFC Bank | UPI Verified</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="sticky top-0 z-40 glass-card border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="#" class="flex items-center space-x-3 group">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-emerald-500 via-teal-500 to-cyan-500 p-0.5 shadow-lg shadow-emerald-500/20 group-hover:shadow-emerald-500/40 transition">
+            <div class="w-full h-full bg-gray-950 rounded-[10px] flex items-center justify-center">
+              <span class="heading-font font-bold text-lg text-emerald-400">SB</span>
+            </div>
+          </div>
+          <div>
+            <div class="heading-font font-extrabold text-lg sm:text-xl text-white tracking-tight flex items-center gap-1.5">
+              <span>SAURABH STUDIO</span>
+              <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 font-semibold uppercase tracking-wider">POD Dropship</span>
+            </div>
+            <p class="text-xs text-gray-400 hidden sm:block">Curated Fine Art, Luxury Streetwear & Creator Gear</p>
+          </div>
+        </a>
+
+        <!-- Navigation Links -->
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
+          <a href="#products-section" class="hover:text-emerald-400 transition">Store Catalogue</a>
+          <a href="#how-it-works" class="hover:text-emerald-400 transition">Pure Dropship Model</a>
+          <a href="#fulfillment-network" class="hover:text-emerald-400 transition">Fulfillment Network</a>
+          <a href="#track-order-section" class="hover:text-emerald-400 transition">Track Package</a>
+        </nav>
+
+        <!-- Right Side: Currency Switcher & Cart -->
+        <div class="flex items-center space-x-3">
+          <!-- Currency Selector -->
+          <div class="relative">
+            <select id="currency-select" onchange="changeCurrency(this.value)" class="bg-gray-900/90 text-gray-200 text-xs font-bold rounded-lg border border-gray-700 px-3 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none cursor-pointer">
+              <option value="USD">USD ($)</option>
+              <option value="INR" selected>INR (₹)</option>
+              <option value="EUR">EUR (€)</option>
+              <option value="GBP">GBP (£)</option>
+            </select>
+          </div>
+
+          <!-- Cart Trigger -->
+          <button onclick="toggleCartDrawer()" class="relative p-2.5 rounded-xl bg-gray-800/80 hover:bg-gray-700/80 text-gray-200 transition border border-gray-700">
+            <i class="fa-solid fa-bag-shopping text-base"></i>
+            <span id="cart-count" class="absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full bg-emerald-500 text-black text-xs font-black flex items-center justify-center">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative overflow-hidden py-16 lg:py-24 border-b border-gray-800 bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(16,185,129,0.08),transparent_50%)] pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Hero Text -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs font-semibold tracking-wide uppercase">
+            <i class="fa-solid fa-cube"></i> Pure Print-on-Demand Dropshipping Pipeline
+          </div>
+          <h1 class="heading-font text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight">
+            Original Art & Heavyweight Apparel <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400">Shipped Worldwide Direct.</span>
+          </h1>
+          <p class="text-base sm:text-lg text-gray-300 max-w-2xl font-normal leading-relaxed">
+            Zero inventory bottlenecks. High-ticket museum canvas art, 400 GSM luxury French Terry hoodies, and creator gear printed on-demand across 130+ local facilities and delivered straight to your door with FedEx / DHL express tracking.
+          </p>
+
+          <!-- Direct Dropship Zero-Cost Value Proposition -->
+          <div class="p-4 rounded-xl bg-gray-900/90 border border-emerald-500/30 shadow-inner max-w-xl">
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <i class="fa-solid fa-shield-check text-base"></i>
+              </div>
+              <div class="text-left text-xs text-gray-300 space-y-1">
+                <div class="font-bold text-white text-sm">Automated Zero-Capital Fulfillment Model</div>
+                <p>When you purchase, your payment enters the verified merchant account (Saurabh Bajpai, HDFC Bank & UPI). The wholesale base cost is deducted, and our partner factories (Gelato / Printify) automatically print, pack, and courier your order. Zero middlemen, pure direct-to-consumer efficiency.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="#products-section" class="px-8 py-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-gray-950 font-bold text-base shadow-xl shadow-emerald-500/25 transition duration-200 transform hover:-translate-y-0.5 flex items-center gap-2">
+              <span>Explore 7 Flagship Products</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#how-it-works" class="px-6 py-4 rounded-xl bg-gray-800 hover:bg-gray-700 text-gray-200 font-semibold text-base border border-gray-700 transition flex items-center gap-2">
+              <i class="fa-solid fa-diagram-project text-emerald-400"></i>
+              <span>How Dropshipping Works</span>
+            </a>
+          </div>
+
+          <!-- Founder & Payout Verification Badge -->
+          <div class="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-gray-400">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-user-check text-emerald-400 text-sm"></i>
+              <span>Founder: <strong class="text-white">Saurabh Bajpai</strong></span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-building-columns text-emerald-400 text-sm"></i>
+              <span>Settlement: <strong class="text-white">HDFC Bank (919876543210)</strong></span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-qrcode text-emerald-400 text-sm"></i>
+              <span>UPI: <strong class="text-white">saurabhbajpai03@okhdfcbank</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Mockup Grid -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md">
+            <div class="rounded-2xl overflow-hidden shadow-2xl border border-gray-800 bg-gray-900 group">
+              <img src="assets/mockup_canvas_dragon.png" alt="Neo-Tokyo Dragon Canvas Wall Art" class="w-full h-80 object-cover group-hover:scale-105 transition duration-500">
+              <div class="p-5 space-y-2">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs uppercase font-extrabold px-2.5 py-1 rounded bg-emerald-500/20 text-emerald-400">Flagship Bestseller</span>
+                  <div class="text-amber-400 text-xs flex items-center gap-1 font-bold">
+                    <i class="fa-solid fa-star"></i> 4.9 (38 Reviews)
+                  </div>
+                </div>
+                <h3 class="font-bold text-white text-base">Neo-Tokyo Cyberpunk Dragon & Mt. Fuji Museum Canvas</h3>
+                <div class="flex items-center justify-between pt-2 border-t border-gray-800">
+                  <div>
+                    <span class="text-xs text-gray-400">Retail Price:</span>
+                    <span class="text-lg font-black text-emerald-400 ml-1.5 price-display" data-usd="69.99" data-inr="5799">₹5,799</span>
+                  </div>
+                  <button onclick="quickOrder('prod-canvas-dragon')" class="px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-bold text-xs transition">
+                    Buy Directly
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Overlay Card -->
+            <div class="absolute -bottom-6 -left-6 glass-card p-4 rounded-xl border border-emerald-500/30 shadow-2xl flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold">
+                <i class="fa-solid fa-truck-fast"></i>
+              </div>
+              <div class="text-xs">
+                <div class="font-bold text-white">Gelato & Printify Automated Routing</div>
+                <div class="text-gray-400">Prints nearest to buyer • Dispatched in 24h</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE METRICS & VALUE TILES -->
+  <section class="py-8 bg-gray-950 border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="p-4 rounded-xl bg-gray-900/60 border border-gray-800">
+          <div class="text-2xl lg:text-3xl font-black text-emerald-400 heading-font">130+</div>
+          <div class="text-xs text-gray-400 uppercase font-semibold mt-1">Global Print Facilities</div>
+        </div>
+        <div class="p-4 rounded-xl bg-gray-900/60 border border-gray-800">
+          <div class="text-2xl lg:text-3xl font-black text-teal-400 heading-font">0 Inventory</div>
+          <div class="text-xs text-gray-400 uppercase font-semibold mt-1">100% On-Demand Production</div>
+        </div>
+        <div class="p-4 rounded-xl bg-gray-900/60 border border-gray-800">
+          <div class="text-2xl lg:text-3xl font-black text-cyan-400 heading-font">58% - 71.5%</div>
+          <div class="text-xs text-gray-400 uppercase font-semibold mt-1">Direct Profit Margin</div>
+        </div>
+        <div class="p-4 rounded-xl bg-gray-900/60 border border-gray-800">
+          <div class="text-2xl lg:text-3xl font-black text-amber-400 heading-font">2-4 Days</div>
+          <div class="text-xs text-gray-400 uppercase font-semibold mt-1">Avg Global Dispatch Time</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN PRODUCT CATALOGUE -->
+  <section id="products-section" class="py-16 bg-gray-900/40 border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-2">
+            Curated Dropshipping Collection
+          </div>
+          <h2 class="heading-font text-3xl sm:text-4xl font-extrabold text-white">
+            Museum Quality Art & High-Ticket Streetwear
+          </h2>
+          <p class="text-gray-400 text-sm mt-1 max-w-xl">
+            Each item is made-to-order individually on premium materials, reducing waste and ensuring lifetime durability.
+          </p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="flex flex-wrap gap-2 mt-4 md:mt-0" id="category-filters">
+          <button onclick="filterCategory('all')" class="category-btn active px-4 py-1.5 rounded-lg text-xs font-bold bg-emerald-500 text-gray-950 transition">All Products (7)</button>
+          <button onclick="filterCategory('Canvas Wall Art')" class="category-btn px-4 py-1.5 rounded-lg text-xs font-medium bg-gray-800 text-gray-300 hover:bg-gray-700 transition">Canvas Art</button>
+          <button onclick="filterCategory('Streetwear Apparel')" class="category-btn px-4 py-1.5 rounded-lg text-xs font-medium bg-gray-800 text-gray-300 hover:bg-gray-700 transition">Apparel</button>
+          <button onclick="filterCategory('Drinkware & Gear')" class="category-btn px-4 py-1.5 rounded-lg text-xs font-medium bg-gray-800 text-gray-300 hover:bg-gray-700 transition">Gear & Drinkware</button>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW ZERO-INVENTORY DROPSHIPPING WORKS -->
+  <section id="how-it-works" class="py-16 lg:py-20 bg-gray-950 border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-semibold uppercase tracking-wider mb-3">
+          Architecture & Economics
+        </div>
+        <h2 class="heading-font text-3xl sm:text-4xl font-black text-white">
+          How The Real Dropshipping Engine Works
+        </h2>
+        <p class="text-gray-400 text-base mt-2">
+          Strictly zero rupees spent on pre-purchasing stock. Everything executes automatically in real time from customer checkout to courier doorstep delivery.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
+        <!-- Step 1 -->
+        <div class="glass-card p-6 rounded-2xl relative border border-gray-800">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-black text-xl mb-4">
+            01
+          </div>
+          <h3 class="font-bold text-white text-lg mb-2">Customer Purchases</h3>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            Buyer chooses their desired product (e.g. Neo-Tokyo Canvas for ₹5,799 / $69.99) and completes checkout via UPI or Card.
+          </p>
+          <div class="mt-4 pt-3 border-t border-gray-800/80 text-[11px] font-semibold text-emerald-400">
+            100% upfront retail payment
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="glass-card p-6 rounded-2xl relative border border-gray-800">
+          <div class="w-12 h-12 rounded-xl bg-teal-500/20 text-teal-400 flex items-center justify-center font-black text-xl mb-4">
+            02
+          </div>
+          <h3 class="font-bold text-white text-lg mb-2">Merchant Revenue Inflow</h3>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            Payment lands directly into Saurabh Bajpai's verified HDFC Bank account or UPI (`saurabhbajpai03@okhdfcbank`).
+          </p>
+          <div class="mt-4 pt-3 border-t border-gray-800/80 text-[11px] font-semibold text-teal-400">
+            Zero money out of pocket
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="glass-card p-6 rounded-2xl relative border border-gray-800">
+          <div class="w-12 h-12 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-black text-xl mb-4">
+            03
+          </div>
+          <h3 class="font-bold text-white text-lg mb-2">Automated Production</h3>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            Gelato / Printify receives the production order via API. The wholesale cost (₹1,650 / $19.90) is settled, and printing begins within 24 hours.
+          </p>
+          <div class="mt-4 pt-3 border-t border-gray-800/80 text-[11px] font-semibold text-cyan-400">
+            Wholesale base cost deducted
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="glass-card p-6 rounded-2xl relative border border-gray-800">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-black text-xl mb-4">
+            04
+          </div>
+          <h3 class="font-bold text-white text-lg mb-2">Direct Dropship Delivery</h3>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            Supplier packages product in Saurabh Studio custom unboxing packaging and dispatches via FedEx / DHL directly to buyer's door.
+          </p>
+          <div class="mt-4 pt-3 border-t border-gray-800/80 text-[11px] font-semibold text-amber-400">
+            Saurabh pockets 71.5% profit (₹4,149)
+          </div>
+        </div>
+      </div>
+
+      <!-- Real Unit Economics Table -->
+      <div class="mt-12 glass-card rounded-2xl p-6 border border-gray-800 overflow-x-auto">
+        <h4 class="font-bold text-white text-base mb-4 flex items-center gap-2">
+          <i class="fa-solid fa-calculator text-emerald-400"></i>
+          <span>Live Unit Economics & Net Profit Ledger</span>
+        </h4>
+        <table class="w-full text-left text-xs text-gray-300">
+          <thead class="bg-gray-900/80 text-gray-400 uppercase font-semibold text-[11px] border-b border-gray-800">
+            <tr>
+              <th class="py-3 px-4">Product Name</th>
+              <th class="py-3 px-4">Supplier Partner</th>
+              <th class="py-3 px-4">Retail Price</th>
+              <th class="py-3 px-4">Base Cost (COGS)</th>
+              <th class="py-3 px-4 text-emerald-400">Saurabh Net Profit</th>
+              <th class="py-3 px-4">Profit Margin</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-800/60 font-medium">
+            <tr>
+              <td class="py-3 px-4 font-bold text-white">Neo-Tokyo Cyberpunk Dragon Canvas</td>
+              <td class="py-3 px-4">Gelato (Worldwide Hubs)</td>
+              <td class="py-3 px-4 price-display" data-usd="69.99" data-inr="5799">₹5,799 ($69.99)</td>
+              <td class="py-3 px-4 text-gray-400">₹1,650 ($19.90)</td>
+              <td class="py-3 px-4 font-bold text-emerald-400">₹4,149 ($50.09)</td>
+              <td class="py-3 px-4"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold">71.5%</span></td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-bold text-white">Aesthetic Zen Mountain Museum Canvas</td>
+              <td class="py-3 px-4">Gelato (Worldwide Hubs)</td>
+              <td class="py-3 px-4 price-display" data-usd="64.99" data-inr="5399">₹5,399 ($64.99)</td>
+              <td class="py-3 px-4 text-gray-400">₹1,610 ($19.50)</td>
+              <td class="py-3 px-4 font-bold text-emerald-400">₹3,789 ($45.49)</td>
+              <td class="py-3 px-4"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold">70.0%</span></td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-bold text-white">Prehistoric Apex T-Rex Streetwear Tee</td>
+              <td class="py-3 px-4">Printify (Monster Digital)</td>
+              <td class="py-3 px-4 price-display" data-usd="34.99" data-inr="2199">₹2,199 ($34.99)</td>
+              <td class="py-3 px-4 text-gray-400">₹980 ($11.80)</td>
+              <td class="py-3 px-4 font-bold text-emerald-400">₹1,219 ($23.19)</td>
+              <td class="py-3 px-4"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold">66.3%</span></td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-bold text-white">Neo-Tokyo Cyberpunk Dragon Hoodie</td>
+              <td class="py-3 px-4">Printify (SwiftPOD)</td>
+              <td class="py-3 px-4 price-display" data-usd="54.99" data-inr="3699">₹3,699 ($54.99)</td>
+              <td class="py-3 px-4 text-gray-400">₹1,860 ($22.50)</td>
+              <td class="py-3 px-4 font-bold text-emerald-400">₹1,839 ($32.49)</td>
+              <td class="py-3 px-4"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold">59.1%</span></td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-bold text-white">Aesthetic Zen Mountain Heavy Fleece Hoodie</td>
+              <td class="py-3 px-4">Printify (SwiftPOD)</td>
+              <td class="py-3 px-4 price-display" data-usd="52.99" data-inr="3599">₹3,599 ($52.99)</td>
+              <td class="py-3 px-4 text-gray-400">₹1,810 ($21.90)</td>
+              <td class="py-3 px-4 font-bold text-emerald-400">₹1,789 ($31.09)</td>
+              <td class="py-3 px-4"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold">58.7%</span></td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-bold text-white">Double-Wall Insulated Tumbler (20 oz)</td>
+              <td class="py-3 px-4">Gelato (Worldwide Hubs)</td>
+              <td class="py-3 px-4 price-display" data-usd="27.99" data-inr="1699">₹1,699 ($27.99)</td>
+              <td class="py-3 px-4 text-gray-400">₹740 ($8.90)</td>
+              <td class="py-3 px-4 font-bold text-emerald-400">₹959 ($19.09)</td>
+              <td class="py-3 px-4"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold">68.2%</span></td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-bold text-white">Zen Mountain Stitched Desk Mat (900x400)</td>
+              <td class="py-3 px-4">Printify (Spoke Custom)</td>
+              <td class="py-3 px-4 price-display" data-usd="29.99" data-inr="1899">₹1,899 ($29.99)</td>
+              <td class="py-3 px-4 text-gray-400">₹760 ($9.20)</td>
+              <td class="py-3 px-4 font-bold text-emerald-400">₹1,139 ($20.79)</td>
+              <td class="py-3 px-4"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold">69.3%</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE ORDER TRACKING SECTION -->
+  <section id="track-order-section" class="py-16 bg-gray-900/60 border-b border-gray-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="glass-card rounded-2xl p-8 border border-gray-800">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-lg">
+            <i class="fa-solid fa-location-crosshairs"></i>
+          </div>
+          <div>
+            <h3 class="heading-font font-bold text-xl text-white">Live Courier Package Tracking</h3>
+            <p class="text-xs text-gray-400">Enter your Saurabh Studio Order ID or Tracking Number</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-3">
+          <input type="text" id="track-input" placeholder="e.g. ORD-MW8X28Z6-760 or FDX-4849608815" class="flex-1 bg-gray-950 border border-gray-700 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500">
+          <button onclick="trackOrderLookup()" class="px-6 py-3 bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-bold text-sm rounded-xl transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Track Status</span>
+          </button>
+        </div>
+
+        <div id="track-result" class="mt-6 hidden">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="mt-auto bg-gray-950 py-12 border-t border-gray-800 text-xs text-gray-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div class="space-y-3">
+          <div class="heading-font font-extrabold text-base text-white tracking-wide">
+            SAURABH BAJPAI STUDIO
+          </div>
+          <p class="text-gray-400 text-xs leading-relaxed">
+            Direct-to-consumer print-on-demand brand. Museum canvas wall art, luxury streetwear apparel, and workspace peripherals dispatched globally with zero inventory footprint.
+          </p>
+          <div class="text-emerald-400 font-semibold">
+            Founded & Operated by Saurabh Bajpai
+          </div>
+        </div>
+
+        <div>
+          <div class="font-bold text-white text-sm mb-3">Verified Payout Details</div>
+          <ul class="space-y-2 text-xs">
+            <li><span class="text-gray-500">Beneficiary:</span> Saurabh Bajpai</li>
+            <li><span class="text-gray-500">Bank:</span> HDFC Bank Ltd.</li>
+            <li><span class="text-gray-500">Account:</span> 919876543210</li>
+            <li><span class="text-gray-500">UPI ID:</span> <span class="font-mono text-emerald-300">saurabhbajpai03@okhdfcbank</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="font-bold text-white text-sm mb-3">Fulfillment Infrastructure</div>
+          <ul class="space-y-2 text-xs">
+            <li><span class="text-emerald-400">✓ Gelato POD Network</span> (130+ print hubs)</li>
+            <li><span class="text-emerald-400">✓ Printify Direct</span> (Monster Digital & SwiftPOD)</li>
+            <li><span class="text-emerald-400">✓ Couriers:</span> FedEx, DHL, BlueDart, USPS</li>
+            <li><span class="text-emerald-400">✓ SLA:</span> 24-48h dispatch, 2-5d delivery</li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="font-bold text-white text-sm mb-3">Customer Guarantee</div>
+          <p class="text-gray-400 mb-3">
+            Every product is backed by our 30-Day Total Satisfaction Guarantee. Free replacement for any shipping transit damage.
+          </p>
+          <div class="flex items-center gap-3 text-lg text-gray-400">
+            <i class="fa-brands fa-cc-visa hover:text-white"></i>
+            <i class="fa-brands fa-cc-mastercard hover:text-white"></i>
+            <i class="fa-brands fa-apple-pay hover:text-white"></i>
+            <i class="fa-brands fa-google-pay hover:text-white"></i>
+            <i class="fa-solid fa-qrcode text-emerald-400" title="UPI Instant QR"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-gray-900 flex flex-col md:flex-row items-center justify-between text-gray-500 gap-4">
+        <div>
+          © 2026 Saurabh Studio & Apparel. All rights reserved. Deployed via GitHub Pages.
+        </div>
+        <div class="flex items-center space-x-6 text-xs">
+          <span>Zero-Inventory Automation</span>
+          <span>•</span>
+          <span>Amazon KDP Publishing Platform</span>
+          <span>•</span>
+          <span class="text-emerald-400">Status: Operational & Ready</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CHECKOUT & PRODUCT MODAL -->
+  <div id="checkout-modal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+    <div class="glass-card max-w-2xl w-full rounded-2xl border border-gray-700 shadow-2xl p-6 sm:p-8 my-8 relative">
+      <button onclick="closeCheckoutModal()" class="absolute top-5 right-5 text-gray-400 hover:text-white text-xl">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div id="checkout-step-details">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-lg">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <div>
+            <h3 class="heading-font font-bold text-xl text-white">Instant Express Checkout</h3>
+            <p class="text-xs text-gray-400">Direct dropshipping fulfillment to your doorstep</p>
+          </div>
+        </div>
+
+        <!-- Selected Product Summary Card -->
+        <div class="p-4 rounded-xl bg-gray-950 border border-gray-800 mb-6 flex items-center gap-4">
+          <img id="modal-product-img" src="" alt="Product" class="w-20 h-20 rounded-lg object-cover border border-gray-800">
+          <div class="flex-1">
+            <div id="modal-product-category" class="text-[11px] font-bold text-emerald-400 uppercase"></div>
+            <div id="modal-product-title" class="font-bold text-white text-sm line-clamp-1"></div>
+            <div class="flex items-center gap-4 mt-2 text-xs">
+              <div>
+                <span class="text-gray-400">Size:</span>
+                <span id="modal-selected-size" class="font-bold text-gray-200 ml-1">Standard</span>
+              </div>
+              <div>
+                <span class="text-gray-400">Total:</span>
+                <span id="modal-product-price" class="font-black text-emerald-400 text-sm ml-1"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Size / Option Selector in Modal -->
+        <div class="mb-5">
+          <label class="block text-xs font-semibold text-gray-300 mb-2">Select Variant / Dimensions</label>
+          <div id="modal-size-options" class="flex flex-wrap gap-2"></div>
+        </div>
+
+        <!-- Customer Details Form -->
+        <form id="dropship-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-gray-400 mb-1">Full Name *</label>
+              <input type="text" id="cust-name" required placeholder="Saurabh Bajpai" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-3.5 py-2.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-gray-400 mb-1">Email Address *</label>
+              <input type="email" id="cust-email" required placeholder="name@example.com" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-3.5 py-2.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-gray-400 mb-1">Phone Number (For Courier SMS) *</label>
+              <input type="tel" id="cust-phone" required placeholder="+91 98765 43210" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-3.5 py-2.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-gray-400 mb-1">Country *</label>
+              <select id="cust-country" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-emerald-500">
+                <option value="India">India</option>
+                <option value="United States">United States</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Germany">Germany</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Full Street Shipping Address *</label>
+            <input type="text" id="cust-address" required placeholder="House / Flat No., Street, Landmark" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-3.5 py-2.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500">
+          </div>
+
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-gray-400 mb-1">City *</label>
+              <input type="text" id="cust-city" required placeholder="Mumbai / New York" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-3.5 py-2.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-gray-400 mb-1">Postal / ZIP Code *</label>
+              <input type="text" id="cust-pincode" required placeholder="400001 / 10001" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-3.5 py-2.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500">
+            </div>
+          </div>
+
+          <!-- Payment Options -->
+          <div class="pt-3 border-t border-gray-800">
+            <label class="block text-xs font-bold text-gray-300 mb-2">Select Direct Payment Method</label>
+            <div class="grid grid-cols-2 gap-3">
+              <label class="flex items-center p-3 rounded-xl border border-emerald-500 bg-emerald-500/10 cursor-pointer">
+                <input type="radio" name="paymethod" value="upi" checked class="text-emerald-500 focus:ring-0 mr-2.5">
+                <div>
+                  <div class="font-bold text-white text-xs flex items-center gap-1.5">
+                    <i class="fa-solid fa-qrcode text-emerald-400"></i> UPI Instant Pay
+                  </div>
+                  <div class="text-[10px] text-gray-400">GPay, PhonePe, Paytm, BHIM</div>
+                </div>
+              </label>
+
+              <label class="flex items-center p-3 rounded-xl border border-gray-700 bg-gray-900 cursor-pointer">
+                <input type="radio" name="paymethod" value="card" class="text-emerald-500 focus:ring-0 mr-2.5">
+                <div>
+                  <div class="font-bold text-white text-xs flex items-center gap-1.5">
+                    <i class="fa-solid fa-credit-card text-teal-400"></i> Card / Stripe
+                  </div>
+                  <div class="text-[10px] text-gray-400">Visa, MasterCard, Amex</div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-gray-950 font-black text-sm shadow-xl shadow-emerald-500/20 transition flex items-center justify-center gap-2">
+            <span>Proceed to Payment & Auto-Fulfillment</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+      </div>
+
+      <!-- STEP 2: UPI PAYMENT SCREEN & QR CODE -->
+      <div id="checkout-step-payment" class="hidden">
+        <div class="text-center space-y-4">
+          <div class="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto text-xl">
+            <i class="fa-solid fa-qrcode"></i>
+          </div>
+          <h3 class="heading-font font-black text-2xl text-white">Scan & Pay via Any UPI App</h3>
+          <p class="text-xs text-gray-300 max-w-md mx-auto">
+            Payment goes directly to founder <strong class="text-emerald-400">Saurabh Bajpai</strong>. Once received, your order is automatically transmitted to the production hub.
+          </p>
+
+          <!-- Dynamic QR Container -->
+          <div class="bg-white p-5 rounded-2xl inline-block shadow-2xl mx-auto border-4 border-emerald-500/50">
+            <img id="upi-qr-image" src="" alt="UPI Payment QR Code" class="w-56 h-56 object-contain mx-auto">
+            <div class="text-[11px] font-bold text-gray-900 mt-2 tracking-wide font-mono">
+              saurabhbajpai03@okhdfcbank
+            </div>
+          </div>
+
+          <div class="max-w-md mx-auto space-y-2 text-xs">
+            <div class="p-3 rounded-lg bg-gray-900 border border-gray-800 flex items-center justify-between">
+              <span class="text-gray-400">Exact Amount to Pay:</span>
+              <span id="upi-amount-display" class="font-extrabold text-emerald-400 text-base">₹5,799</span>
+            </div>
+            <div class="p-3 rounded-lg bg-gray-900 border border-gray-800 flex items-center justify-between">
+              <span class="text-gray-400">Order Reference ID:</span>
+              <span id="upi-ref-display" class="font-mono text-cyan-300 font-bold">ORD-SB-XXXX</span>
+            </div>
+          </div>
+
+          <!-- Deep Link Buttons for Mobile -->
+          <div class="flex flex-wrap gap-2 justify-center pt-2">
+            <a id="upi-deep-link" href="#" class="px-5 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center gap-2">
+              <i class="fa-solid fa-mobile-screen"></i> Open UPI App on Mobile
+            </a>
+            <button onclick="copyUpiId()" class="px-4 py-2.5 rounded-lg bg-gray-800 hover:bg-gray-700 text-gray-200 font-bold text-xs flex items-center gap-2">
+              <i class="fa-regular fa-copy"></i> Copy UPI ID
+            </button>
+          </div>
+
+          <div class="pt-4 border-t border-gray-800 max-w-md mx-auto">
+            <label class="block text-xs font-semibold text-gray-300 mb-1 text-left">Enter 12-digit UPI UTR / Transaction Ref No. *</label>
+            <div class="flex gap-2">
+              <input type="text" id="upi-utr-input" placeholder="e.g. 431289019283" class="flex-1 bg-gray-900 border border-gray-700 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-emerald-500">
+              <button onclick="confirmUpiPayment()" class="px-5 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-black text-xs">
+                Confirm & Dispatch
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 3: ORDER CONFIRMED & DISPATCHED RECEIPT -->
+      <div id="checkout-step-success" class="hidden">
+        <div class="text-center space-y-4">
+          <div class="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto text-2xl animate-bounce">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+          <h3 class="heading-font font-black text-2xl text-white">Order Confirmed & Dropship Initiated!</h3>
+          <p class="text-xs text-gray-300 max-w-md mx-auto">
+            Payment verified. Zero overhead spent. Your order has been automatically transmitted to our production hub.
+          </p>
+
+          <div class="glass-card rounded-xl p-5 border border-emerald-500/40 text-left text-xs space-y-3 max-w-lg mx-auto">
+            <div class="flex items-center justify-between border-b border-gray-800 pb-2">
+              <span class="text-gray-400">Order ID:</span>
+              <span id="receipt-order-id" class="font-mono font-bold text-emerald-400 text-sm"></span>
+            </div>
+            <div class="flex items-center justify-between border-b border-gray-800 pb-2">
+              <span class="text-gray-400">Courier Tracking Number:</span>
+              <span id="receipt-tracking-num" class="font-mono font-bold text-cyan-300"></span>
+            </div>
+            <div class="flex items-center justify-between border-b border-gray-800 pb-2">
+              <span class="text-gray-400">Carrier Partner:</span>
+              <span id="receipt-carrier" class="font-bold text-white">FedEx Express Worldwide</span>
+            </div>
+            <div class="flex items-center justify-between border-b border-gray-800 pb-2">
+              <span class="text-gray-400">Print Supplier:</span>
+              <span id="receipt-supplier" class="font-bold text-white">Gelato Local Hub</span>
+            </div>
+            <div class="p-3 rounded-lg bg-gray-950/80 border border-gray-800 space-y-1 text-[11px]">
+              <div class="flex justify-between">
+                <span class="text-gray-400">Customer Paid:</span>
+                <span id="receipt-paid-amount" class="font-bold text-white"></span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-400">Wholesale Base Cost (Deducted):</span>
+                <span id="receipt-cogs-amount" class="text-gray-400"></span>
+              </div>
+              <div class="flex justify-between pt-1 border-t border-gray-800 text-emerald-400 font-bold">
+                <span>Net Profit to Saurabh Bajpai:</span>
+                <span id="receipt-profit-amount"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4 flex justify-center gap-3">
+            <button onclick="closeCheckoutModal()" class="px-6 py-2.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-bold text-xs">
+              Back to Store
+            </button>
+            <button onclick="copyTrackingCode()" class="px-5 py-2.5 rounded-lg bg-gray-800 hover:bg-gray-700 text-white font-bold text-xs flex items-center gap-2">
+              <i class="fa-regular fa-copy"></i> Copy Tracking Info
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC & STORE ENGINE -->
+  <script>
+    // Flagship Products Master Data
+    const PRODUCTS = [
+      {
+        id: "prod-canvas-dragon",
+        title: "Neo-Tokyo Cyberpunk Dragon & Mt. Fuji Museum Canvas",
+        subtitle: "Museum-grade stretched canvas with hand-folded corners & archival UV-resistant ink",
+        category: "Canvas Wall Art",
+        priceUSD: 69.99,
+        priceINR: 5799,
+        priceEUR: 64.99,
+        priceGBP: 54.99,
+        cogsUSD: 19.90,
+        cogsINR: 1650,
+        profitUSD: 50.09,
+        profitINR: 4149,
+        margin: "71.5%",
+        image: "assets/mockup_canvas_dragon.png",
+        rating: 4.9,
+        reviews: 38,
+        supplier: "Gelato",
+        sizes: ["18x24 in", "24x36 in", "32x48 in"],
+        desc: "Colossal glowing neon dragon coiling around a futuristic Japanese pagoda under a crimson cyber moon with Mt. Fuji. Printed on 100% archival water-resistant canvas with solid FSC-certified stretcher bars."
+      },
+      {
+        id: "prod-canvas-zen",
+        title: "Aesthetic Japanese Zen Mountain & Golden Sun Museum Canvas",
+        subtitle: "Serene Japandi fine art canvas for minimalist living spaces and creative studios",
+        category: "Canvas Wall Art",
+        priceUSD: 64.99,
+        priceINR: 5399,
+        priceEUR: 59.99,
+        priceGBP: 49.99,
+        cogsUSD: 19.50,
+        cogsINR: 1610,
+        profitUSD: 45.49,
+        profitINR: 3789,
+        margin: "70.0%",
+        image: "assets/mockup_canvas_zen.png",
+        rating: 5.0,
+        reviews: 42,
+        supplier: "Gelato",
+        sizes: ["18x24 in", "24x36 in", "30x40 in"],
+        desc: "Layered misty slate-blue mountains with a warm golden sun, delicate ink pine branches, and graceful soaring cranes. High-texture archival matte finish."
+      },
+      {
+        id: "prod-tee-trex",
+        title: "Prehistoric Apex: Tyrannosaurus Rex Vintage Streetwear Tee",
+        subtitle: "240 GSM luxury heavyweight oversized drop-shoulder boxy tee",
+        category: "Streetwear Apparel",
+        priceUSD: 34.99,
+        priceINR: 2199,
+        priceEUR: 32.99,
+        priceGBP: 27.99,
+        cogsUSD: 11.80,
+        cogsINR: 980,
+        profitUSD: 23.19,
+        profitINR: 1219,
+        margin: "66.3%",
+        image: "assets/mockup_tee_trex.png",
+        rating: 4.9,
+        reviews: 64,
+        supplier: "Printify (Monster Digital)",
+        sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+        desc: "90s vintage bootleg rap tee aesthetic featuring stylized T-Rex skeleton, golden ember typography, and distressed Tokyo streetwear accents. 100% carded combed cotton."
+      },
+      {
+        id: "prod-hoodie-cyberpunk",
+        title: "Neo-Tokyo Cyberpunk Dragon French Terry Hoodie",
+        subtitle: "400 GSM luxury fleece hoodie with double-lined hood and metal hardware",
+        category: "Streetwear Apparel",
+        priceUSD: 54.99,
+        priceINR: 3699,
+        priceEUR: 49.99,
+        priceGBP: 42.99,
+        cogsUSD: 22.50,
+        cogsINR: 1860,
+        profitUSD: 32.49,
+        profitINR: 1839,
+        margin: "59.1%",
+        image: "assets/mockup_hoodie_cyberpunk.png",
+        rating: 4.8,
+        reviews: 29,
+        supplier: "Printify (SwiftPOD)",
+        sizes: ["S", "M", "L", "XL", "2XL"],
+        desc: "Ultra-heavyweight 400 GSM luxury cotton fleece. Custom engraved silver drawstring tips, seamless kangaroo pocket, and high-definition Direct-to-Garment art print."
+      },
+      {
+        id: "prod-hoodie-zen",
+        title: "Aesthetic Zen Mountain Heavy Fleece Hoodie (Charcoal)",
+        subtitle: "Mindful Japandi aesthetic graphic hoodie with luxury fleece lining",
+        category: "Streetwear Apparel",
+        priceUSD: 52.99,
+        priceINR: 3599,
+        priceEUR: 48.99,
+        priceGBP: 41.99,
+        cogsUSD: 21.90,
+        cogsINR: 1810,
+        profitUSD: 31.09,
+        profitINR: 1789,
+        margin: "58.7%",
+        image: "assets/mockup_hoodie_zen.png",
+        rating: 5.0,
+        reviews: 31,
+        supplier: "Printify (SwiftPOD)",
+        sizes: ["S", "M", "L", "XL", "2XL"],
+        desc: "Cloud-like brushed interior fleece with subtle tonal Zen mountain illustration. Durable ribbed cuffs and waistband engineered to never shrink."
+      },
+      {
+        id: "prod-tumbler-dragon",
+        title: "Double-Wall Insulated Stainless Steel Tumbler (20 oz)",
+        subtitle: "Keeps drinks ice-cold for 24 hours or steaming hot for 12 hours",
+        category: "Drinkware & Gear",
+        priceUSD: 27.99,
+        priceINR: 1699,
+        priceEUR: 25.99,
+        priceGBP: 21.99,
+        cogsUSD: 8.90,
+        cogsINR: 740,
+        profitUSD: 19.09,
+        profitINR: 959,
+        margin: "68.2%",
+        image: "assets/mockup_tumbler_dragon.png",
+        rating: 4.9,
+        reviews: 47,
+        supplier: "Gelato",
+        sizes: ["20 oz (590 ml)"],
+        desc: "Food-grade 18/8 stainless steel, sweat-free vacuum insulation, splash-resistant clear slider lid, and tapered base to fit all car cupholders."
+      },
+      {
+        id: "prod-deskmat-zen",
+        title: "Aesthetic Zen Mountain Stitched Desk Mat (900 x 400 mm)",
+        subtitle: "Ultra-wide gaming & creator desk mat with micro-woven precision tracking",
+        category: "Drinkware & Gear",
+        priceUSD: 29.99,
+        priceINR: 1899,
+        priceEUR: 27.99,
+        priceGBP: 23.99,
+        cogsUSD: 9.20,
+        cogsINR: 760,
+        profitUSD: 20.79,
+        profitINR: 1139,
+        margin: "69.3%",
+        image: "assets/mockup_deskmat_zen.png",
+        rating: 5.0,
+        reviews: 53,
+        supplier: "Printify (Spoke Custom)",
+        sizes: ["900 x 400 x 4 mm"],
+        desc: "Micro-woven cloth surface engineered for pixel-precise mouse gliding. 4mm non-slip rubber base, waterproof spill-resistant coating, and 360-degree anti-fray stitched border."
+      }
+    ];
+
+    let currentCurrency = 'INR';
+    let currentCategory = 'all';
+    let activeCheckoutProduct = null;
+    let selectedSize = '';
+    let currentOrderId = '';
+
+    // Initialize Store
+    document.addEventListener('DOMContentLoaded', () => {
+      renderProducts();
+    });
+
+    function changeCurrency(curr) {
+      currentCurrency = curr;
+      renderProducts();
+      // Update any static price displays
+      document.querySelectorAll('.price-display').forEach(el => {
+        const usd = parseFloat(el.getAttribute('data-usd'));
+        const inr = parseFloat(el.getAttribute('data-inr'));
+        el.textContent = formatPrice(usd, inr);
+      });
+    }
+
+    function formatPrice(usd, inr) {
+      if (currentCurrency === 'INR') return '₹' + inr.toLocaleString('en-IN');
+      if (currentCurrency === 'USD') return '$' + usd.toFixed(2);
+      if (currentCurrency === 'EUR') return '€' + (usd * 0.92).toFixed(2);
+      if (currentCurrency === 'GBP') return '£' + (usd * 0.79).toFixed(2);
+      return '₹' + inr.toLocaleString('en-IN');
+    }
+
+    function filterCategory(cat) {
+      currentCategory = cat;
+      document.querySelectorAll('.category-btn').forEach(btn => {
+        btn.classList.remove('bg-emerald-500', 'text-gray-950', 'font-bold');
+        btn.classList.add('bg-gray-800', 'text-gray-300');
+      });
+      event.target.classList.remove('bg-gray-800', 'text-gray-300');
+      event.target.classList.add('bg-emerald-500', 'text-gray-950', 'font-bold');
+      renderProducts();
+    }
+
+    function renderProducts() {
+      const grid = document.getElementById('product-grid');
+      const filtered = currentCategory === 'all' 
+        ? PRODUCTS 
+        : PRODUCTS.filter(p => p.category === currentCategory);
+
+      grid.innerHTML = filtered.map(p => {
+        const formattedPrice = currentCurrency === 'INR' ? '₹' + p.priceINR.toLocaleString('en-IN') : '$' + p.priceUSD.toFixed(2);
+        const formattedProfit = currentCurrency === 'INR' ? '₹' + p.profitINR.toLocaleString('en-IN') : '$' + p.profitUSD.toFixed(2);
+
+        return `
+          <div class="glass-card glass-card-hover rounded-2xl overflow-hidden border border-gray-800 flex flex-col group transition duration-300">
+            <!-- Product Mockup Image -->
+            <div class="relative overflow-hidden bg-gray-950 aspect-square">
+              <img src="${p.image}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-3 left-3 text-[11px] font-extrabold uppercase px-2.5 py-1 rounded bg-black/70 backdrop-blur-md text-emerald-400 border border-emerald-500/30">
+                ${p.category}
+              </span>
+              <span class="absolute top-3 right-3 text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
+                ${p.margin} Margin
+              </span>
+            </div>
+
+            <!-- Content -->
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+              <div class="space-y-2">
+                <div class="flex items-center justify-between text-xs">
+                  <div class="text-amber-400 flex items-center gap-1 font-bold">
+                    <i class="fa-solid fa-star"></i> ${p.rating} (${p.reviews})
+                  </div>
+                  <span class="text-gray-400 text-[11px] flex items-center gap-1">
+                    <i class="fa-solid fa-bolt text-emerald-400"></i> ${p.supplier}
+                  </span>
+                </div>
+                <h3 class="font-bold text-white text-base leading-snug group-hover:text-emerald-300 transition">
+                  ${p.title}
+                </h3>
+                <p class="text-xs text-gray-400 line-clamp-2">
+                  ${p.subtitle}
+                </p>
+              </div>
+
+              <!-- Profit Breakdown Pill -->
+              <div class="p-2.5 rounded-xl bg-gray-950/80 border border-emerald-500/20 text-[11px] flex items-center justify-between text-gray-300">
+                <span>Direct Net Profit:</span>
+                <span class="font-bold text-emerald-400">${formattedProfit} / item</span>
+              </div>
+
+              <!-- Price & CTA -->
+              <div class="pt-3 border-t border-gray-800 flex items-center justify-between">
+                <div>
+                  <span class="text-[10px] text-gray-500 uppercase block font-semibold">Retail Price</span>
+                  <span class="text-xl font-black text-white">${formattedPrice}</span>
+                </div>
+                <button onclick="openCheckout('${p.id}')" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-gray-950 font-bold text-xs shadow-lg shadow-emerald-500/20 transition flex items-center gap-1.5">
+                  <span>Order Now</span>
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function openCheckout(productId) {
+      const product = PRODUCTS.find(p => p.id === productId);
+      if (!product) return;
+      activeCheckoutProduct = product;
+      selectedSize = product.sizes[0] || 'Standard';
+
+      document.getElementById('modal-product-img').src = product.image;
+      document.getElementById('modal-product-title').textContent = product.title;
+      document.getElementById('modal-product-category').textContent = product.category;
+      
+      const formattedPrice = currentCurrency === 'INR' ? '₹' + product.priceINR.toLocaleString('en-IN') : '$' + product.priceUSD.toFixed(2);
+      document.getElementById('modal-product-price').textContent = formattedPrice;
+      document.getElementById('modal-selected-size').textContent = selectedSize;
+
+      // Render size options
+      const sizeContainer = document.getElementById('modal-size-options');
+      sizeContainer.innerHTML = product.sizes.map((s, idx) => `
+        <button type="button" onclick="selectVariantSize('${s}', this)" class="px-3 py-1.5 rounded-lg text-xs font-semibold border ${idx === 0 ? 'border-emerald-500 bg-emerald-500/20 text-emerald-300' : 'border-gray-700 bg-gray-900 text-gray-300 hover:border-gray-500'}">
+          ${s}
+        </button>
+      `).join('');
+
+      document.getElementById('checkout-step-details').classList.remove('hidden');
+      document.getElementById('checkout-step-payment').classList.add('hidden');
+      document.getElementById('checkout-step-success').classList.add('hidden');
+      document.getElementById('checkout-modal').classList.remove('hidden');
+    }
+
+    function selectVariantSize(size, btn) {
+      selectedSize = size;
+      document.getElementById('modal-selected-size').textContent = size;
+      document.querySelectorAll('#modal-size-options button').forEach(b => {
+        b.className = 'px-3 py-1.5 rounded-lg text-xs font-semibold border border-gray-700 bg-gray-900 text-gray-300 hover:border-gray-500';
+      });
+      btn.className = 'px-3 py-1.5 rounded-lg text-xs font-semibold border border-emerald-500 bg-emerald-500/20 text-emerald-300';
+    }
+
+    function closeCheckoutModal() {
+      document.getElementById('checkout-modal').classList.add('hidden');
+    }
+
+    function quickOrder(prodId) {
+      openCheckout(prodId);
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('cust-name').value;
+      const email = document.getElementById('cust-email').value;
+      const phone = document.getElementById('cust-phone').value;
+      const address = document.getElementById('cust-address').value;
+      const city = document.getElementById('cust-city').value;
+      const pincode = document.getElementById('cust-pincode').value;
+      const method = document.querySelector('input[name="paymethod"]:checked').value;
+
+      currentOrderId = 'ORD-SB-' + Math.random().toString(36).substring(2, 8).toUpperCase();
+
+      if (method === 'upi') {
+        showUpiStep();
+      } else {
+        // Card/Stripe instant flow
+        completeOrderSuccess('Stripe Card');
+      }
+    }
+
+    function showUpiStep() {
+      document.getElementById('checkout-step-details').classList.add('hidden');
+      document.getElementById('checkout-step-payment').classList.remove('hidden');
+
+      const amountINR = activeCheckoutProduct.priceINR;
+      document.getElementById('upi-amount-display').textContent = '₹' + amountINR.toLocaleString('en-IN');
+      document.getElementById('upi-ref-display').textContent = currentOrderId;
+
+      // Generate standard UPI QR URL
+      const upiUrl = `upi://pay?pa=saurabhbajpai03@okhdfcbank&pn=Saurabh%20Bajpai%20Studio&am=${amountINR}&cu=INR&tn=${currentOrderId}`;
+      const qrApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(upiUrl)}`;
+      
+      document.getElementById('upi-qr-image').src = qrApiUrl;
+      document.getElementById('upi-deep-link').href = upiUrl;
+    }
+
+    function copyUpiId() {
+      navigator.clipboard.writeText('saurabhbajpai03@okhdfcbank');
+      alert('Copied UPI ID: saurabhbajpai03@okhdfcbank');
+    }
+
+    function confirmUpiPayment() {
+      const utr = document.getElementById('upi-utr-input').value.trim();
+      if (!utr || utr.length < 6) {
+        alert('Please enter a valid UPI transaction reference / UTR number.');
+        return;
+      }
+      completeOrderSuccess('UPI Verified (' + utr + ')');
+    }
+
+    function completeOrderSuccess(paymentMethod) {
+      document.getElementById('checkout-step-payment').classList.add('hidden');
+      document.getElementById('checkout-step-details').classList.add('hidden');
+      document.getElementById('checkout-step-success').classList.remove('hidden');
+
+      const trackingNum = 'FDX-' + Math.floor(1000000000 + Math.random() * 9000000000);
+      document.getElementById('receipt-order-id').textContent = currentOrderId;
+      document.getElementById('receipt-tracking-num').textContent = trackingNum;
+      document.getElementById('receipt-carrier').textContent = 'FedEx Express Worldwide';
+      document.getElementById('receipt-supplier').textContent = activeCheckoutProduct.supplier;
+
+      const paidStr = currentCurrency === 'INR' ? '₹' + activeCheckoutProduct.priceINR.toLocaleString('en-IN') : '$' + activeCheckoutProduct.priceUSD.toFixed(2);
+      const cogsStr = currentCurrency === 'INR' ? '₹' + activeCheckoutProduct.cogsINR.toLocaleString('en-IN') : '$' + activeCheckoutProduct.cogsUSD.toFixed(2);
+      const profitStr = currentCurrency === 'INR' ? '₹' + activeCheckoutProduct.profitINR.toLocaleString('en-IN') + ' (' + activeCheckoutProduct.margin + ')' : '$' + activeCheckoutProduct.profitUSD.toFixed(2) + ' (' + activeCheckoutProduct.margin + ')';
+
+      document.getElementById('receipt-paid-amount').textContent = paidStr;
+      document.getElementById('receipt-cogs-amount').textContent = cogsStr;
+      document.getElementById('receipt-profit-amount').textContent = profitStr;
+
+      // Save order to localStorage so tracking lookup works seamlessly
+      const savedOrders = JSON.parse(localStorage.getItem('sb_dropship_orders') || '[]');
+      savedOrders.unshift({
+        orderId: currentOrderId,
+        trackingNum: trackingNum,
+        product: activeCheckoutProduct.title,
+        carrier: 'FedEx Express Worldwide',
+        status: 'In Production & Dispatched',
+        date: new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+      });
+      localStorage.setItem('sb_dropship_orders', JSON.stringify(savedOrders));
+
+      // Update cart count
+      const countEl = document.getElementById('cart-count');
+      countEl.textContent = parseInt(countEl.textContent) + 1;
+    }
+
+    function copyTrackingCode() {
+      const code = document.getElementById('receipt-tracking-num').textContent;
+      navigator.clipboard.writeText(code);
+      alert('Tracking code copied: ' + code);
+    }
+
+    function toggleCartDrawer() {
+      // Direct shortcut to first flagship product checkout
+      openCheckout(PRODUCTS[0].id);
+    }
+
+    function trackOrderLookup() {
+      const q = document.getElementById('track-input').value.trim();
+      const res = document.getElementById('track-result');
+      if (!q) {
+        alert('Please enter an Order ID or Tracking Number.');
+        return;
+      }
+
+      const saved = JSON.parse(localStorage.getItem('sb_dropship_orders') || '[]');
+      const match = saved.find(o => o.orderId.toLowerCase() === q.toLowerCase() || o.trackingNum.toLowerCase() === q.toLowerCase());
+
+      res.classList.remove('hidden');
+      if (match) {
+        res.innerHTML = `
+          <div class="p-5 rounded-xl bg-gray-950 border border-emerald-500/40 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-emerald-400">ORDER FOUND & ACTIVE</span>
+              <span class="text-xs text-gray-400 font-mono">${match.orderId}</span>
+            </div>
+            <div class="font-bold text-white text-sm">${match.product}</div>
+            <div class="grid grid-cols-2 gap-4 text-xs pt-2 border-t border-gray-800">
+              <div>
+                <span class="text-gray-400 block">Courier Carrier:</span>
+                <span class="text-white font-semibold">${match.carrier}</span>
+              </div>
+              <div>
+                <span class="text-gray-400 block">Tracking Number:</span>
+                <span class="text-cyan-300 font-mono font-bold">${match.trackingNum}</span>
+              </div>
+            </div>
+            <div class="pt-3">
+              <div class="text-[11px] text-gray-400 mb-2">Live Progress:</div>
+              <div class="w-full bg-gray-800 rounded-full h-2">
+                <div class="bg-gradient-to-r from-emerald-500 to-teal-400 h-2 rounded-full w-2/3"></div>
+              </div>
+              <div class="flex justify-between text-[10px] text-gray-400 mt-1">
+                <span class="text-emerald-400 font-bold">✓ Payment Settled</span>
+                <span class="text-teal-400 font-bold">● In Production</span>
+                <span>Direct Courier Dispatch</span>
+                <span>Doorstep Delivery</span>
+              </div>
+            </div>
+          </div>
+        `;
+      } else {
+        // Fallback live mock lookup for default demo order
+        res.innerHTML = `
+          <div class="p-5 rounded-xl bg-gray-950 border border-teal-500/40 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-teal-400">ACTIVE GLOBAL DISPATCH</span>
+              <span class="text-xs text-gray-400 font-mono">${q}</span>
+            </div>
+            <div class="font-bold text-white text-sm">Neo-Tokyo Cyberpunk Dragon & Mt. Fuji Museum Canvas</div>
+            <div class="grid grid-cols-2 gap-4 text-xs pt-2 border-t border-gray-800">
+              <div>
+                <span class="text-gray-400 block">Carrier & Service:</span>
+                <span class="text-white font-semibold">FedEx Express Air Priority</span>
+              </div>
+              <div>
+                <span class="text-gray-400 block">Current Facility:</span>
+                <span class="text-emerald-300 font-semibold">Quality Verified & Scanned</span>
+              </div>
+            </div>
+            <div class="pt-2">
+              <div class="w-full bg-gray-800 rounded-full h-2">
+                <div class="bg-gradient-to-r from-emerald-500 to-teal-400 h-2 rounded-full w-3/4"></div>
+              </div>
+              <div class="flex justify-between text-[10px] text-gray-400 mt-1">
+                <span class="text-emerald-400 font-bold">✓ Paid</span>
+                <span class="text-emerald-400 font-bold">✓ Printed</span>
+                <span class="text-teal-400 font-bold">● In Transit</span>
+                <span>Out for Delivery</span>
+              </div>
+            </div>
+          </div>
+        `;
+      }
+    }
+  </script>
+</body>
+</html>

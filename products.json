@@ -1,0 +1,408 @@
+{
+  "storeInfo": {
+    "storeName": "Saurabh Studio & Apparel",
+    "tagline": "Curated Artistic Streetwear, Museum Canvas Art & Creator Gear",
+    "founder": "Saurabh Bajpai",
+    "payoutBank": "HDFC Bank (919876543210)",
+    "payoutUpi": "saurabhbajpai03@okhdfcbank",
+    "baseCurrency": "USD",
+    "supportedCurrencies": [
+      "USD",
+      "INR",
+      "EUR",
+      "GBP"
+    ],
+    "exchangeRates": {
+      "USD": 1,
+      "INR": 83.2,
+      "EUR": 0.92,
+      "GBP": 0.79
+    }
+  },
+  "supplierIntegrations": [
+    {
+      "name": "Gelato",
+      "status": "Connected & Operational",
+      "hubsCount": 130,
+      "countries": 32,
+      "autoRouting": true,
+      "products": [
+        "Canvas Wall Art",
+        "Drinkware",
+        "Posters"
+      ],
+      "fulfillmentTimeDays": "2-4 days",
+      "deliveryPartners": [
+        "FedEx",
+        "DHL",
+        "BlueDart",
+        "USPS"
+      ]
+    },
+    {
+      "name": "Printify",
+      "status": "Connected & Operational",
+      "hubsCount": 85,
+      "countries": 18,
+      "autoRouting": true,
+      "products": [
+        "Heavyweight T-Shirts",
+        "Heavy Fleece Hoodies",
+        "Desk Mats"
+      ],
+      "fulfillmentTimeDays": "2-5 days",
+      "deliveryPartners": [
+        "USPS",
+        "UPS",
+        "Royal Mail",
+        "Delhivery"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "prod-canvas-dragon",
+      "title": "Neo-Tokyo Cyberpunk Dragon & Mt. Fuji Premium Stretched Canvas",
+      "subtitle": "Museum-grade stretched canvas with hand-folded corners & archival UV-resistant ink",
+      "category": "Canvas Wall Art",
+      "retailPriceUSD": 69.99,
+      "retailPriceINR": 5799,
+      "supplierCostUSD": 19.9,
+      "supplierCostINR": 1650,
+      "netMarginUSD": 50.09,
+      "netMarginINR": 4149,
+      "marginPercent": 71.5,
+      "fulfillmentPartner": "Gelato",
+      "productionTime": "24-48 Hours",
+      "mockupImage": "/generated/mockup_canvas_dragon.png",
+      "sizes": [
+        "18x24 in",
+        "24x36 in",
+        "32x48 in"
+      ],
+      "inStock": true,
+      "rating": 4.9,
+      "reviewCount": 38,
+      "features": [
+        "FSC-certified sustainable solid wood stretcher bars (1.25 in depth)",
+        "Water-resistant poly-cotton blend matte archival canvas",
+        "Vibrant 12-color giclee print technology with lifetime fade guarantee",
+        "Pre-installed brass sawtooth hanging hardware included"
+      ]
+    },
+    {
+      "id": "prod-canvas-zen",
+      "title": "Aesthetic Japanese Zen Mountain & Golden Sun Museum Canvas",
+      "subtitle": "Serene Japandi fine art canvas for minimalist living spaces and creative studios",
+      "category": "Canvas Wall Art",
+      "retailPriceUSD": 64.99,
+      "retailPriceINR": 5399,
+      "supplierCostUSD": 19.5,
+      "supplierCostINR": 1610,
+      "netMarginUSD": 45.49,
+      "netMarginINR": 3789,
+      "marginPercent": 70,
+      "fulfillmentPartner": "Gelato",
+      "productionTime": "24-48 Hours",
+      "mockupImage": "/generated/mockup_canvas_zen.png",
+      "sizes": [
+        "18x24 in",
+        "24x36 in",
+        "30x40 in"
+      ],
+      "inStock": true,
+      "rating": 5,
+      "reviewCount": 42,
+      "features": [
+        "Warm off-white textured background with rich charcoal ink tones",
+        "100% genuine canvas crafted to resist sagging over time",
+        "Printed using water-based non-toxic inks in eco-friendly facilities",
+        "Ships worldwide in shock-absorbing reinforced protective crating"
+      ]
+    },
+    {
+      "id": "prod-tee-trex",
+      "title": "Prehistoric Apex: Tyrannosaurus Rex Vintage Streetwear Tee",
+      "subtitle": "240 GSM luxury heavyweight oversized drop-shoulder boxy tee",
+      "category": "Streetwear Apparel",
+      "retailPriceUSD": 34.99,
+      "retailPriceINR": 2199,
+      "supplierCostUSD": 11.8,
+      "supplierCostINR": 980,
+      "netMarginUSD": 23.19,
+      "netMarginINR": 1219,
+      "marginPercent": 66.3,
+      "fulfillmentPartner": "Printify (Monster Digital)",
+      "productionTime": "2-3 Business Days",
+      "mockupImage": "/generated/mockup_tee_trex.png",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+      ],
+      "colors": [
+        "Washed Vintage Black",
+        "Charcoal Gray",
+        "Bone White"
+      ],
+      "inStock": true,
+      "rating": 4.9,
+      "reviewCount": 64,
+      "features": [
+        "100% luxury ring-spun carded combed cotton for an ultra-soft hand feel",
+        "Modern vintage boxy fit with lowered armholes and thick 1-inch rib collar",
+        "High-definition Direct-to-Garment (DTG) print with zero cracking",
+        "Pre-shrunk fabric ensures exact fit after repeated machine washes"
+      ]
+    },
+    {
+      "id": "prod-hoodie-cyberpunk",
+      "title": "Neo-Tokyo Cyberpunk Dragon Heavyweight French Terry Hoodie",
+      "subtitle": "400 GSM luxury fleece hoodie with double-lined hood and premium metal hardware",
+      "category": "Streetwear Apparel",
+      "retailPriceUSD": 54.99,
+      "retailPriceINR": 3699,
+      "supplierCostUSD": 22.5,
+      "supplierCostINR": 1860,
+      "netMarginUSD": 32.49,
+      "netMarginINR": 1839,
+      "marginPercent": 59.1,
+      "fulfillmentPartner": "Printify (SwiftPOD)",
+      "productionTime": "2-4 Business Days",
+      "mockupImage": "/generated/mockup_hoodie_cyberpunk.png",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
+      "colors": [
+        "Midnight Obsidian",
+        "Vintage Heather"
+      ],
+      "inStock": true,
+      "rating": 4.8,
+      "reviewCount": 29,
+      "features": [
+        "Ultra-heavyweight 400 GSM cotton-poly fleece engineered for ultimate warmth",
+        "Seamless kangaroo pocket with reinforced bar-tack stitching",
+        "Silver-tipped flat drawstrings and custom engraved metal eyelets",
+        "Drop shoulder silhouette designed for effortless modern streetwear layering"
+      ]
+    },
+    {
+      "id": "prod-hoodie-zen",
+      "title": "Aesthetic Zen Mountain Heavy Fleece Hoodie (Charcoal Edition)",
+      "subtitle": "Mindful Japandi aesthetic graphic hoodie with luxury fleece lining",
+      "category": "Streetwear Apparel",
+      "retailPriceUSD": 52.99,
+      "retailPriceINR": 3599,
+      "supplierCostUSD": 21.9,
+      "supplierCostINR": 1810,
+      "netMarginUSD": 31.09,
+      "netMarginINR": 1789,
+      "marginPercent": 58.7,
+      "fulfillmentPartner": "Printify (SwiftPOD)",
+      "productionTime": "2-4 Business Days",
+      "mockupImage": "/generated/mockup_hoodie_zen.png",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
+      "colors": [
+        "Deep Charcoal",
+        "Sand Oatmeal",
+        "Sage Green"
+      ],
+      "inStock": true,
+      "rating": 5,
+      "reviewCount": 31,
+      "features": [
+        "Plush brushed interior fleece for cloud-like comfort",
+        "Subtle high-resolution tonal aesthetic print that never fades",
+        "Ribbed spandex cuffs and waistband retain shape permanently",
+        "Ethically manufactured in WRAP-certified eco-friendly facilities"
+      ]
+    },
+    {
+      "id": "prod-tumbler-dragon",
+      "title": "Double-Wall Insulated Stainless Steel Tumbler (20 oz)",
+      "subtitle": "Keeps drinks ice-cold for 24 hours or steaming hot for 12 hours",
+      "category": "Drinkware & Gear",
+      "retailPriceUSD": 27.99,
+      "retailPriceINR": 1699,
+      "supplierCostUSD": 8.9,
+      "supplierCostINR": 740,
+      "netMarginUSD": 19.09,
+      "netMarginINR": 959,
+      "marginPercent": 68.2,
+      "fulfillmentPartner": "Gelato",
+      "productionTime": "24-48 Hours",
+      "mockupImage": "/generated/mockup_tumbler_dragon.png",
+      "sizes": [
+        "20 oz (590 ml)"
+      ],
+      "colors": [
+        "Matte Black",
+        "Brushed Steel"
+      ],
+      "inStock": true,
+      "rating": 4.9,
+      "reviewCount": 47,
+      "features": [
+        "Food-grade 18/8 stainless steel construction, 100% BPA and lead-free",
+        "Vacuum insulation prevents exterior condensation and sweat",
+        "Crystal-clear splash-resistant slider lid fits reusable straws",
+        "Tapered base fits smoothly into standard car cupholders"
+      ]
+    },
+    {
+      "id": "prod-deskmat-zen",
+      "title": "Aesthetic Zen Mountain Anti-Fray Stitched Desk Mat (900 x 400 mm)",
+      "subtitle": "Ultra-wide gaming & creator desk mat with micro-woven precision tracking",
+      "category": "Workspace Gear",
+      "retailPriceUSD": 29.99,
+      "retailPriceINR": 1899,
+      "supplierCostUSD": 9.2,
+      "supplierCostINR": 760,
+      "netMarginUSD": 20.79,
+      "netMarginINR": 1139,
+      "marginPercent": 69.3,
+      "fulfillmentPartner": "Printify (Spoke Custom)",
+      "productionTime": "2-3 Business Days",
+      "mockupImage": "/generated/mockup_deskmat_zen.png",
+      "sizes": [
+        "900 x 400 x 4 mm (35.4 x 15.7 in)"
+      ],
+      "inStock": true,
+      "rating": 5,
+      "reviewCount": 53,
+      "features": [
+        "High-density micro-woven cloth surface optimized for optical and laser mice",
+        "4mm thick natural open-cell rubber base eliminates slippage on wood and glass",
+        "Full-perimeter 360-degree precision anti-fray stitched edge",
+        "Waterproof and oil-resistant coating repels accidental coffee or water spills"
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "orderId": "ORD-MW8XE0W1-585",
+      "createdAt": "2026-11-09T07:14:15.937Z",
+      "customer": {
+        "name": "Michael Sterling",
+        "email": "michael.sterling@globalreach.com",
+        "phone": "+1 (555) 789-2345",
+        "shippingAddress": "840 Fifth Avenue, Apt 14B, New York, NY 10021, USA"
+      },
+      "items": [
+        {
+          "productId": "prod-canvas-zen",
+          "title": "Aesthetic Japanese Zen Mountain & Golden Sun Museum Canvas",
+          "category": "Canvas Wall Art",
+          "size": "18x24 in",
+          "color": "Default",
+          "quantity": 1,
+          "unitPriceUSD": 64.99,
+          "lineTotalUSD": 64.99,
+          "supplier": "Gelato"
+        }
+      ],
+      "financials": {
+        "totalRetailUSD": 64.99,
+        "totalRetailINR": 5407,
+        "supplierCostUSD": 19.5,
+        "netProfitUSD": 45.49,
+        "netProfitINR": 3785,
+        "marginPercent": 70,
+        "currency": "USD",
+        "paymentMethod": "UPI",
+        "payoutBeneficiary": "Saurabh Bajpai (HDFC Bank 919876543210)"
+      },
+      "fulfillment": {
+        "status": "Sent to Fulfillment Hub",
+        "carrier": "FedEx Express Worldwide",
+        "trackingNumber": "FDX-3683531679",
+        "estimatedDeliveryDays": "3-5 Business Days",
+        "whiteLabelBrand": "Saurabh Bajpai Studio & Apparel"
+      }
+    },
+    {
+      "orderId": "ORD-MW8X28Z6-760",
+      "createdAt": "2026-11-09T07:05:06.546Z",
+      "customer": {
+        "name": "Alexander Vance",
+        "email": "alex.vance@example.com",
+        "phone": "+1 (415) 890-1234",
+        "shippingAddress": "742 Evergreen Terrace, San Francisco, CA 94107"
+      },
+      "items": [
+        {
+          "productId": "prod-canvas-dragon",
+          "title": "Neo-Tokyo Cyberpunk Dragon & Mt. Fuji Premium Stretched Canvas",
+          "category": "Canvas Wall Art",
+          "size": "24x36 in",
+          "color": "Default",
+          "quantity": 1,
+          "unitPriceUSD": 69.99,
+          "lineTotalUSD": 69.99,
+          "supplier": "Gelato"
+        },
+        {
+          "productId": "prod-tee-trex",
+          "title": "Prehistoric Apex: Tyrannosaurus Rex Vintage Streetwear Tee",
+          "category": "Streetwear Apparel",
+          "size": "L",
+          "color": "Washed Vintage Black",
+          "quantity": 1,
+          "unitPriceUSD": 34.99,
+          "lineTotalUSD": 34.99,
+          "supplier": "Printify (Monster Digital)"
+        }
+      ],
+      "financials": {
+        "totalRetailUSD": 104.98,
+        "totalRetailINR": 8734,
+        "supplierCostUSD": 31.7,
+        "netProfitUSD": 73.28,
+        "netProfitINR": 6097,
+        "marginPercent": 69.8,
+        "currency": "USD",
+        "paymentMethod": "Stripe (Instant Visa)",
+        "payoutBeneficiary": "Saurabh Bajpai (HDFC Bank 919876543210)"
+      },
+      "fulfillment": {
+        "status": "Sent to Fulfillment Hub",
+        "carrier": "FedEx Express Worldwide",
+        "trackingNumber": "FDX-4849608815",
+        "estimatedDeliveryDays": "3-5 Business Days",
+        "whiteLabelBrand": "Saurabh Bajpai Studio & Apparel"
+      }
+    }
+  ],
+  "marketingFunnels": [
+    {
+      "productId": "prod-canvas-dragon",
+      "platform": "TikTok & Instagram Reels",
+      "hook": "POV: You finally stopped buying boring generic posters and upgraded your room with a Japanese Cyberpunk masterpiece...",
+      "audioRecommendation": "Trending Phonk / Lofi Tokyo Night Vibes",
+      "visualConcept": "Close-up unboxing of 24x36 canvas, peeling protective wrap, running fingers over canvas texture, hanging on wall, dimming lights to show neon details.",
+      "callToAction": "Link in bio to grab yours while free worldwide express shipping lasts!"
+    },
+    {
+      "productId": "prod-tee-trex",
+      "platform": "TikTok & Pinterest",
+      "hook": "Finding a graphic tee that actually has a real heavyweight boxy streetwear fit is almost impossible until you see this...",
+      "audioRecommendation": "Underground Hip-Hop / 90s Boom Bap Beat",
+      "visualConcept": "Outfit of the day (OOTD) styling with baggy vintage denim, sneakers, and clean jewelry. Close up on the textured distressed T-Rex print.",
+      "callToAction": "Available now at Saurabh Studio. Tap link to shop."
+    }
+  ]
+}
