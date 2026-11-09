@@ -343,6 +343,228 @@
   </section>
 
   <!-- ======================================================== -->
+  <!-- SECTION: THE ATELIER RACK • 3D INTERACTIVE HANGER CLOTHING SUITE -->
+  <!-- ======================================================== -->
+  <section id="clothing-rack" class="py-20 bg-[#05070b] border-b border-gray-800 relative overflow-hidden">
+    <!-- Top Ambient Spotlight for Rack -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-40 bg-gradient-to-b from-emerald-500/10 via-cyan-500/5 to-transparent blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Section Title -->
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-[11px] font-mono-code uppercase tracking-wider mb-2">
+          <i class="fa-solid fa-shirt"></i> INTERACTIVE 3D APPAREL RACK • PRINTIFY DIRECT
+        </div>
+        <h2 class="font-luxury text-3xl sm:text-4xl font-black text-white">
+          THE ATELIER CLOTHING RACK
+        </h2>
+        <p class="text-gray-400 text-xs sm:text-sm mt-1.5">
+          Hover over any hanger on the rail to swing the garment forward. Click any color swatch below to dynamically change the fabric tint in real time.
+        </p>
+      </div>
+
+      <!-- THE 3D CLOTHING RAIL STRUCTURE -->
+      <div class="relative pt-8 pb-12">
+        <!-- Horizontal Metallic Steel Rail -->
+        <div class="relative w-full max-w-5xl mx-auto h-3 rounded-full bg-gradient-to-r from-gray-800 via-gray-300 to-gray-800 shadow-2xl flex items-center justify-between px-6 border-b border-white/20">
+          <!-- Left Rail Mount -->
+          <div class="w-6 h-10 rounded-sm bg-gradient-to-b from-gray-600 via-gray-400 to-gray-900 border border-gray-700 -ml-8 shadow-xl"></div>
+          <!-- Center Support Ring -->
+          <div class="w-4 h-6 rounded-sm bg-gray-500 border border-gray-600 shadow"></div>
+          <!-- Right Rail Mount -->
+          <div class="w-6 h-10 rounded-sm bg-gradient-to-b from-gray-600 via-gray-400 to-gray-900 border border-gray-700 -mr-8 shadow-xl"></div>
+        </div>
+
+        <!-- HANGERS GRID ON RAIL -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mt-[-10px] items-start">
+          
+          <!-- HANGER ITEM 1: Neo-Tokyo Dragon Heavy Hoodie (400 GSM) -->
+          <div class="hanger-card group relative flex flex-col items-center cursor-pointer transition-all duration-500" data-hanger="hoodie-cyberpunk" onmouseenter="activateHanger(this)" onmouseleave="deactivateHanger(this)">
+            <!-- Metallic Hanger Hook -->
+            <div class="w-8 h-10 flex items-center justify-center transition-transform duration-500 group-hover:scale-105">
+              <svg viewBox="0 0 24 28" fill="none" class="w-6 h-8 drop-shadow-md">
+                <path d="M12 2 C8 2, 8 7, 12 7 C14 7, 15 8, 15 10 L12 14" stroke="#d1d5db" stroke-width="2.2" stroke-linecap="round"/>
+                <path d="M12 14 L2 22 L22 22 Z" stroke="#9ca3af" stroke-width="1.8" fill="#1f2937"/>
+              </svg>
+            </div>
+
+            <!-- Garment Container with 3D Angle & Perspective -->
+            <div class="garment-viewport relative w-72 sm:w-80 h-96 rounded-2xl overflow-hidden p-3 transition-all duration-500 transform-gpu perspective-[1200px]" style="transform: perspective(1000px) rotateY(28deg) scale(0.95);">
+              
+              <!-- Dynamic Color Tint Overlay (Controlled by Swatches) -->
+              <div id="tint-hoodie-cyberpunk" class="absolute inset-0 rounded-2xl transition-colors duration-500 pointer-events-none mix-blend-color z-10" style="background-color: transparent;"></div>
+              
+              <!-- Product Image -->
+              <img id="img-hoodie-cyberpunk" src="assets/mockup_hoodie_cyberpunk.png" alt="Neo-Tokyo Dragon Hoodie" class="w-full h-full object-contain filter drop-shadow-2xl transition-transform duration-500 group-hover:scale-105">
+              
+              <!-- Floating Pill on Garment -->
+              <div class="absolute top-4 left-4 z-20 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-[10px] font-mono-code text-emerald-400 border border-emerald-500/30">
+                400 GSM FLEECE
+              </div>
+            </div>
+
+            <!-- Interactive HUD Panel (Expands on Hover) -->
+            <div class="w-full max-w-xs mt-3 p-4 rounded-xl luxury-card border border-gray-800 text-left space-y-3 shadow-xl">
+              <div class="flex items-center justify-between text-[11px] font-mono-code">
+                <span class="text-gray-400">Printify • SwiftPOD</span>
+                <span class="text-emerald-400 font-bold">In Stock</span>
+              </div>
+              <h4 class="font-bold text-white text-sm">Neo-Tokyo Cyberpunk Dragon Hoodie</h4>
+              
+              <!-- Color Swatches -->
+              <div>
+                <div class="flex justify-between text-[10px] font-mono-code text-gray-400 mb-1.5">
+                  <span>SELECT FABRIC COLOR:</span>
+                  <span id="color-name-hoodie-cyberpunk" class="text-emerald-300 font-bold">Midnight Obsidian</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <button type="button" onclick="setGarmentColor('hoodie-cyberpunk', 'transparent', 'Midnight Obsidian', this)" class="w-6 h-6 rounded-full bg-[#111317] border-2 border-emerald-400 shadow-md transition hover:scale-110" title="Midnight Obsidian"></button>
+                  <button type="button" onclick="setGarmentColor('hoodie-cyberpunk', 'rgba(55, 65, 81, 0.45)', 'Vintage Charcoal', this)" class="w-6 h-6 rounded-full bg-[#374151] border border-gray-600 transition hover:scale-110" title="Vintage Charcoal"></button>
+                  <button type="button" onclick="setGarmentColor('hoodie-cyberpunk', 'rgba(180, 160, 130, 0.45)', 'Sand Oatmeal', this)" class="w-6 h-6 rounded-full bg-[#d5cbbe] border border-gray-600 transition hover:scale-110" title="Sand Oatmeal"></button>
+                  <button type="button" onclick="setGarmentColor('hoodie-cyberpunk', 'rgba(74, 94, 82, 0.45)', 'Sage Green', this)" class="w-6 h-6 rounded-full bg-[#5e7065] border border-gray-600 transition hover:scale-110" title="Sage Green"></button>
+                  <button type="button" onclick="setGarmentColor('hoodie-cyberpunk', 'rgba(120, 30, 40, 0.4)', 'Crimson Dusk', this)" class="w-6 h-6 rounded-full bg-[#781e28] border border-gray-600 transition hover:scale-110" title="Crimson Dusk"></button>
+                </div>
+              </div>
+
+              <!-- Price & CTA -->
+              <div class="pt-2 border-t border-gray-800 flex items-center justify-between">
+                <div>
+                  <div class="text-[9px] text-gray-500 font-mono-code uppercase">Retail Price</div>
+                  <div class="text-base font-black text-white font-mono-code price-display" data-usd="54.99" data-inr="3699">₹3,699</div>
+                </div>
+                <button onclick="quickBuy('prod-hoodie-cyberpunk')" class="px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-black font-bold text-xs uppercase tracking-wider transition">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- HANGER ITEM 2: Prehistoric Apex T-Rex Streetwear Tee (240 GSM) -->
+          <div class="hanger-card group relative flex flex-col items-center cursor-pointer transition-all duration-500" data-hanger="tee-trex" onmouseenter="activateHanger(this)" onmouseleave="deactivateHanger(this)">
+            <!-- Metallic Hanger Hook -->
+            <div class="w-8 h-10 flex items-center justify-center transition-transform duration-500 group-hover:scale-105">
+              <svg viewBox="0 0 24 28" fill="none" class="w-6 h-8 drop-shadow-md">
+                <path d="M12 2 C8 2, 8 7, 12 7 C14 7, 15 8, 15 10 L12 14" stroke="#d1d5db" stroke-width="2.2" stroke-linecap="round"/>
+                <path d="M12 14 L2 22 L22 22 Z" stroke="#9ca3af" stroke-width="1.8" fill="#1f2937"/>
+              </svg>
+            </div>
+
+            <!-- Garment Container -->
+            <div class="garment-viewport relative w-72 sm:w-80 h-96 rounded-2xl overflow-hidden p-3 transition-all duration-500 transform-gpu perspective-[1200px]" style="transform: perspective(1000px) rotateY(0deg) scale(1);">
+              
+              <!-- Dynamic Color Tint Overlay -->
+              <div id="tint-tee-trex" class="absolute inset-0 rounded-2xl transition-colors duration-500 pointer-events-none mix-blend-color z-10" style="background-color: transparent;"></div>
+              
+              <!-- Product Image -->
+              <img id="img-tee-trex" src="assets/mockup_tee_trex.png" alt="Prehistoric Apex T-Rex Tee" class="w-full h-full object-contain filter drop-shadow-2xl transition-transform duration-500 group-hover:scale-105">
+              
+              <div class="absolute top-4 left-4 z-20 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-[10px] font-mono-code text-cyan-400 border border-cyan-500/30">
+                240 GSM BOXY TEE
+              </div>
+            </div>
+
+            <!-- Interactive HUD Panel -->
+            <div class="w-full max-w-xs mt-3 p-4 rounded-xl luxury-card border border-gray-800 text-left space-y-3 shadow-xl">
+              <div class="flex items-center justify-between text-[11px] font-mono-code">
+                <span class="text-gray-400">Printify • Monster Digital</span>
+                <span class="text-cyan-400 font-bold">100% Combed Cotton</span>
+              </div>
+              <h4 class="font-bold text-white text-sm">Prehistoric Apex T-Rex Streetwear Tee</h4>
+              
+              <!-- Color Swatches -->
+              <div>
+                <div class="flex justify-between text-[10px] font-mono-code text-gray-400 mb-1.5">
+                  <span>SELECT FABRIC COLOR:</span>
+                  <span id="color-name-tee-trex" class="text-cyan-300 font-bold">Vintage Washed Black</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <button type="button" onclick="setGarmentColor('tee-trex', 'transparent', 'Vintage Washed Black', this)" class="w-6 h-6 rounded-full bg-[#18181b] border-2 border-cyan-400 shadow-md transition hover:scale-110" title="Washed Black"></button>
+                  <button type="button" onclick="setGarmentColor('tee-trex', 'rgba(40, 50, 70, 0.45)', 'Tokyo Midnight Navy', this)" class="w-6 h-6 rounded-full bg-[#1e293b] border border-gray-600 transition hover:scale-110" title="Tokyo Navy"></button>
+                  <button type="button" onclick="setGarmentColor('tee-trex', 'rgba(210, 195, 175, 0.45)', 'Bone Ecru', this)" class="w-6 h-6 rounded-full bg-[#f3f1ec] border border-gray-600 transition hover:scale-110" title="Bone Ecru"></button>
+                  <button type="button" onclick="setGarmentColor('tee-trex', 'rgba(60, 80, 65, 0.45)', 'Olive Drab', this)" class="w-6 h-6 rounded-full bg-[#475545] border border-gray-600 transition hover:scale-110" title="Olive Drab"></button>
+                </div>
+              </div>
+
+              <!-- Price & CTA -->
+              <div class="pt-2 border-t border-gray-800 flex items-center justify-between">
+                <div>
+                  <div class="text-[9px] text-gray-500 font-mono-code uppercase">Retail Price</div>
+                  <div class="text-base font-black text-white font-mono-code price-display" data-usd="34.99" data-inr="2199">₹2,199</div>
+                </div>
+                <button onclick="quickBuy('prod-tee-trex')" class="px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-400 hover:to-teal-400 text-black font-bold text-xs uppercase tracking-wider transition">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- HANGER ITEM 3: Aesthetic Zen Mountain Heavy Fleece Hoodie -->
+          <div class="hanger-card group relative flex flex-col items-center cursor-pointer transition-all duration-500" data-hanger="hoodie-zen" onmouseenter="activateHanger(this)" onmouseleave="deactivateHanger(this)">
+            <!-- Metallic Hanger Hook -->
+            <div class="w-8 h-10 flex items-center justify-center transition-transform duration-500 group-hover:scale-105">
+              <svg viewBox="0 0 24 28" fill="none" class="w-6 h-8 drop-shadow-md">
+                <path d="M12 2 C8 2, 8 7, 12 7 C14 7, 15 8, 15 10 L12 14" stroke="#d1d5db" stroke-width="2.2" stroke-linecap="round"/>
+                <path d="M12 14 L2 22 L22 22 Z" stroke="#9ca3af" stroke-width="1.8" fill="#1f2937"/>
+              </svg>
+            </div>
+
+            <!-- Garment Container -->
+            <div class="garment-viewport relative w-72 sm:w-80 h-96 rounded-2xl overflow-hidden p-3 transition-all duration-500 transform-gpu perspective-[1200px]" style="transform: perspective(1000px) rotateY(-28deg) scale(0.95);">
+              
+              <!-- Dynamic Color Tint Overlay -->
+              <div id="tint-hoodie-zen" class="absolute inset-0 rounded-2xl transition-colors duration-500 pointer-events-none mix-blend-color z-10" style="background-color: transparent;"></div>
+              
+              <!-- Product Image -->
+              <img id="img-hoodie-zen" src="assets/mockup_hoodie_zen.png" alt="Aesthetic Zen Mountain Hoodie" class="w-full h-full object-contain filter drop-shadow-2xl transition-transform duration-500 group-hover:scale-105">
+              
+              <div class="absolute top-4 left-4 z-20 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md text-[10px] font-mono-code text-amber-400 border border-amber-500/30">
+                JAPANDI FLEECE
+              </div>
+            </div>
+
+            <!-- Interactive HUD Panel -->
+            <div class="w-full max-w-xs mt-3 p-4 rounded-xl luxury-card border border-gray-800 text-left space-y-3 shadow-xl">
+              <div class="flex items-center justify-between text-[11px] font-mono-code">
+                <span class="text-gray-400">Printify • SwiftPOD</span>
+                <span class="text-amber-400 font-bold">Cloud Interior</span>
+              </div>
+              <h4 class="font-bold text-white text-sm">Aesthetic Zen Mountain Heavy Hoodie</h4>
+              
+              <!-- Color Swatches -->
+              <div>
+                <div class="flex justify-between text-[10px] font-mono-code text-gray-400 mb-1.5">
+                  <span>SELECT FABRIC COLOR:</span>
+                  <span id="color-name-hoodie-zen" class="text-amber-300 font-bold">Slate Charcoal</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <button type="button" onclick="setGarmentColor('hoodie-zen', 'transparent', 'Slate Charcoal', this)" class="w-6 h-6 rounded-full bg-[#27272a] border-2 border-amber-400 shadow-md transition hover:scale-110" title="Slate Charcoal"></button>
+                  <button type="button" onclick="setGarmentColor('hoodie-zen', 'rgba(160, 140, 115, 0.45)', 'Sand Stone', this)" class="w-6 h-6 rounded-full bg-[#a89b88] border border-gray-600 transition hover:scale-110" title="Sand Stone"></button>
+                  <button type="button" onclick="setGarmentColor('hoodie-zen', 'rgba(70, 95, 80, 0.45)', 'Kyoto Moss', this)" class="w-6 h-6 rounded-full bg-[#4a5f50] border border-gray-600 transition hover:scale-110" title="Kyoto Moss"></button>
+                  <button type="button" onclick="setGarmentColor('hoodie-zen', 'rgba(45, 55, 75, 0.45)', 'Indigo River', this)" class="w-6 h-6 rounded-full bg-[#2d374b] border border-gray-600 transition hover:scale-110" title="Indigo River"></button>
+                </div>
+              </div>
+
+              <!-- Price & CTA -->
+              <div class="pt-2 border-t border-gray-800 flex items-center justify-between">
+                <div>
+                  <div class="text-[9px] text-gray-500 font-mono-code uppercase">Retail Price</div>
+                  <div class="text-base font-black text-white font-mono-code price-display" data-usd="52.99" data-inr="3599">₹3,599</div>
+                </div>
+                <button onclick="quickBuy('prod-hoodie-zen')" class="px-4 py-2 rounded-lg bg-gradient-to-r from-amber-500 to-emerald-500 hover:from-amber-400 hover:to-emerald-400 text-black font-bold text-xs uppercase tracking-wider transition">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================== -->
   <!-- SECTION: EDITORIAL STREETWEAR LOOKBOOK -->
   <!-- ======================================================== -->
   <section id="lookbook" class="py-16 bg-black border-b border-gray-800">
@@ -988,6 +1210,48 @@
           </div>
         </div>
       `;
+    }
+
+    // Interactive 3D Hanger Clothing Rack Animations
+    function activateHanger(cardEl) {
+      const vp = cardEl.querySelector('.garment-viewport');
+      if (vp) {
+        vp.style.transform = 'perspective(1200px) rotateY(0deg) scale(1.08) translateY(-6px)';
+        vp.style.zIndex = '30';
+      }
+    }
+
+    function deactivateHanger(cardEl) {
+      const vp = cardEl.querySelector('.garment-viewport');
+      const hangerId = cardEl.getAttribute('data-hanger');
+      if (vp) {
+        if (hangerId === 'hoodie-cyberpunk') {
+          vp.style.transform = 'perspective(1000px) rotateY(28deg) scale(0.95)';
+        } else if (hangerId === 'hoodie-zen') {
+          vp.style.transform = 'perspective(1000px) rotateY(-28deg) scale(0.95)';
+        } else {
+          vp.style.transform = 'perspective(1000px) rotateY(0deg) scale(1)';
+        }
+        vp.style.zIndex = '1';
+      }
+    }
+
+    function setGarmentColor(hangerId, tintColor, colorName, btnEl) {
+      const tintEl = document.getElementById('tint-' + hangerId);
+      const nameEl = document.getElementById('color-name-' + hangerId);
+      if (tintEl) {
+        tintEl.style.backgroundColor = tintColor;
+      }
+      if (nameEl) {
+        nameEl.textContent = colorName;
+      }
+      if (btnEl) {
+        const parent = btnEl.parentElement;
+        parent.querySelectorAll('button').forEach(b => {
+          b.className = 'w-6 h-6 rounded-full border border-gray-600 transition hover:scale-110';
+        });
+        btnEl.className = 'w-6 h-6 rounded-full border-2 border-emerald-400 shadow-md transition hover:scale-110';
+      }
     }
   </script>
 </body>
